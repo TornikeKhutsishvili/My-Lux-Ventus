@@ -1,54 +1,63 @@
- /* General styles */
+/******************* General styles **********************/
 * {
-  box-sizing: border-box;
-  text-decoration: none !important;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: #f9f9f9;
-  font-family: 'Poppins', sans-serif;
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-.header-container {
-  width: 1272px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 37px 84px 47px;
+
+/********************** header **********************/
+#header .container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 37px 84px 47px;
 }
 
-.logo-icon {
+
+#header .header-content {
+    max-width: 1272px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .logo {
+    display: flex;
+    align-items: center;
+}
+
+#header .logo-icon {
     width: 234px;
     height: 49px;
     cursor: pointer;
 }
 
-nav {
-  display: flex;
-  margin-left: 255px;
-  margin-right: 66px;
+#header nav {
+    display: flex;
+    margin-left: 255px;
+    margin-right: 66px;
 }
 
-nav a {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  color: #262626;
-  border-radius: 40px;
-  padding: 9px 31px;
-  transition: 0.5s;
+#header nav a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #262626;
+    border-radius: 40px;
+    padding: 9px 31px;
+    transition: 0.5s;
 }
 
-nav a:hover {
+#header nav a:hover {
     background-color: #4CE0D7;
     border-radius: 40px;
     transition: background-color 0.3s, color 0.3s;
@@ -56,126 +65,17 @@ nav a:hover {
     transition: 0.5s;
 }
 
-.search-icon {
-  width: 47px;
-  height: 47px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.search-icon:hover{
-    background-color: #4CE0D7;
-    border-radius: 90px;
-    transition: background-color 0.5s, color 0.5s;
-    transition: 0.5s;
-}
-
-
-.first-section {
-  background-image: url('./assets/pexels-andrea-piacquadio-994234 1.png');
-  width: 1272px;
-  height: 559px;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  position: relative;
-  border-radius: 25px;
-  margin-bottom: 73px;
-  box-sizing: border-box;
-  margin-left: 84px;
-}
-
-
-.Lux {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 2px;
-  margin-left: 57px;
-  margin-bottom: 22px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.first-section-img {
-  margin-left: 57px;
-  margin-bottom: 19px;
-}
-
-.first-section-content p:not(.Lux) {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: 0;
-  margin-left: 57px;
-  color: #fff;
-}
-
-
-
-
-/******************* header **********************/
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-
-.header-container {
-  width: 1272px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 37px 84px 47px;
-}
-
-.logo-icon {
-    width: 234px;
-    height: 49px;
+#header .search-icon {
+    width: 47px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-}
-
-nav {
-  display: flex;
-  margin-left: 255px;
-  margin-right: 66px;
-}
-
-nav a {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 14px;
-  color: #262626;
-  border-radius: 40px;
-  padding: 9px 31px;
-  transition: 0.5s;
-}
-
-nav a:hover {
-    background-color: #4CE0D7;
-    border-radius: 40px;
-    transition: background-color 0.3s, color 0.3s;
-    transform: translateY(6px);
     transition: 0.5s;
 }
 
-.search-icon {
-  width: 47px;
-  height: 47px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.search-icon:hover{
+#header .search-icon:hover{
     background-color: #4CE0D7;
     border-radius: 90px;
     transition: background-color 0.5s, color 0.5s;
@@ -183,47 +83,232 @@ nav a:hover {
 }
 
 
-.first-section {
-  background-image: url('./assets/pexels-andrea-piacquadio-994234 1.png');
-  width: 1272px;
-  height: 559px;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  position: relative;
-  border-radius: 25px;
-  margin-bottom: 73px;
-  box-sizing: border-box;
-  margin-left: 84px;
+
+/********************** Header Responsive **********************/
+
+/*** Responsive for < 1440px ***/
+@media (max-width: 1440px) {
+
+    #header nav {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/*** Responsive for < 1240px ***/
+@media (max-width: 1240px) {
+
+    #header .container {
+        padding: 30px 24px;
+        width: 100%;
+    }
+
+    #header .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        margin: 0;
+    }
+
+    #header nav a {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+
+}
+
+/*** Responsive for < 768px ***/
+@media (max-width: 768px) {
+
+    #header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #header .search-icon {
+        margin-top: 10px;
+    }
+
+    #header nav a {
+        font-size: 12px;
+        padding: 7px 18px;
+    }
+
 }
 
 
-.Lux {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 2px;
-  margin-left: 57px;
-  margin-bottom: 22px;
-  color: #fff;
-  text-transform: uppercase;
+
+
+
+
+/********************** First Section **********************/
+#first-section {
+    width: 1440px;
+    margin: 0px auto 73px;
 }
 
-.first-section-img {
-  margin-left: 57px;
-  margin-bottom: 19px;
+#first-section .container {
+    background-image: url('./assets/pexels-andrea-piacquadio-994234 1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    max-width: 1272px;
+    width: 100%;
+    height: 559px;
+    margin: 0 auto;
+    padding: 218px 588px 141px 57px;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.first-section-content p:not(.Lux) {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: 0;
-  margin-left: 57px;
-  color: #fff;
+#first-section .first-section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+#first-section .Lux {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#first-section .ventus-gradient {
+    margin-bottom: 19px;
+    width: 627px;
+    font-size: 46px;
+    font-weight: 400;
+    color: #fff;
+}
+
+#first-section .ventus-gradient span {
+    background: linear-gradient(to right, rgba(76, 224, 215, 1), rgba(139, 169, 244, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+#first-section .first-section-content-text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+
+
+
+/********************** First section Responsive **********************/
+
+/*** Responsive for < 1440px ***/
+@media (max-width: 1440px) {
+
+}
+
+/*** Responsive for < 1240px ***/
+@media (max-width: 1240px) {
+
+    #first-section {
+        width: 100%;
+        margin: 0 auto 50px;
+    }
+
+    #first-section .container {
+        padding: 60px 40px 60px 40px;
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #first-section .ventus-gradient {
+        width: 100%;
+        font-size: 36px;
+    }
+
+    #first-section .first-section-content-text {
+        font-size: 18px;
+    }
+
+    #first-section .Lux {
+        font-size: 11px;
+    }
+
+}
+
+/*** Responsive for < 768px ***/
+@media (max-width: 768px) {
+
+    #first-section .container {
+        padding: 50px 24px;
+        height: auto;
+    }
+
+    #first-section .ventus-gradient {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    #first-section .first-section-content-text {
+        font-size: 16px;
+    }
+
+    #first-section .Lux {
+        font-size: 10px;
+        margin-bottom: 16px;
+    }
+
+}
+
+/*** Responsive for < 480px (phones) ***/
+@media (max-width: 480px) {
+
+    #header .logo-icon {
+        width: 180px;
+        height: auto;
+    }
+
+    #first-section .container {
+        padding: 40px 16px;
+    }
+
+    #first-section .ventus-gradient {
+        font-size: 22px;
+    }
+
+    #first-section .first-section-content-text {
+        font-size: 14px;
+    }
+
+    #first-section .Lux {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+}
+
 
 
 
@@ -350,7 +435,12 @@ nav a:hover {
 
 
 
-/***************************** responsive *****************************/
+
+
+
+/***************************** Topics Top Cards Responsive *****************************/
+
+/*** Responsive for < 1430px ***/
 @media (max-width: 1430px) {
 
     #topics-top-section .topics-cards {
@@ -364,6 +454,7 @@ nav a:hover {
 }
 
 
+/*** Responsive for < 1148px ***/
 @media (max-width: 1148px) {
 
     #topics-top-section .card {
@@ -373,6 +464,7 @@ nav a:hover {
 }
 
 
+/*** Responsive for < 992px ***/
 @media (max-width: 992px) {
 
     #topics-top-section .card {
@@ -382,11 +474,18 @@ nav a:hover {
 }
 
 
-@media (max-width: 582px) {
+/*** Responsive for < 597px ***/
+@media (max-width: 597px) {
 
     #topics-top-section .card {
         width: 100%;
     }
+
+}
+
+
+/*** Responsive for < 582px ***/
+@media (max-width: 582px) {
 
     #topics-top-section .card h2 {
         font-size: 16px;
@@ -395,6 +494,12 @@ nav a:hover {
 }
 
 
+/*** Responsive for < 387px ***/
+@media (max-width: 387px) {
+    #topics-top-section .container {
+        padding: 0 20px;
+    }
+}
 
 
 
@@ -680,7 +785,7 @@ nav a:hover {
 
 
 
-/************************ Responsive ************************/
+/************************ Topics Bottom Card Responsive ************************/
 
 /*** Responsive for < 1250px ***/
 @media (max-width: 1250px) {
@@ -783,10 +888,14 @@ nav a:hover {
 
 
 /*** Responsive for < 456px ***/
-@media (max-width: 456px) {
+@media (max-width: 457px) {
 
     #topics-bottom-card .card {
         max-width: 360px;
+    }
+
+    #topics-bottom-card .card-body {
+        margin-top: 80px;
     }
 
     #topics-bottom-card .top-div button {
@@ -1141,7 +1250,7 @@ nav a:hover {
 
 
 
-/************************ Responsive ************************/
+/************************ Trending Top Section Responsive ************************/
 
 /*** Responsive for < 1250px ***/
 @media (max-width: 1250px) {
@@ -1292,8 +1401,9 @@ nav a:hover {
 /*** Responsive for < 600px ***/
 @media (max-width: 600px) {
 
-    #trending-top-section .first-card, #trending-top-section .second-card {
-        max-width: 440px;
+    #trending-top-section .first-card,
+    #trending-top-section .second-card {
+        max-width: auto;
     }
 
 }
@@ -1303,7 +1413,7 @@ nav a:hover {
 @media (max-width: 520px) {
 
     #trending-top-section .cards {
-        padding: 0 40px;
+        padding: 0 30px;
     }
 
 }
@@ -1311,6 +1421,10 @@ nav a:hover {
 
 /*** Responsive for < 456px ***/
 @media (max-width: 456px) {
+
+    #trending-top-section .cards {
+        padding: 0 15px;
+    }
 
     #trending-top-section .top-div button {
         width: 120px;
@@ -1656,7 +1770,7 @@ nav a:hover {
 
 
 
-/************************ Responsive ************************/
+/************************ Trending Bottom Section Responsive ************************/
 
 /*** Responsive for < 1250px ***/
 @media (max-width: 1250px) {
@@ -1903,7 +2017,7 @@ nav a:hover {
 
 
 
-/* responsive */
+/************************ Footer Responsive ************************/
 
 @media (max-width: 1440px) {
 
