@@ -82,20 +82,88 @@ body {
     transition: 0.5s;
 }
 
+#header .search-icon-mobile {
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#header .search-icon-mobile:hover {
+    background-color: #4CE0D7;
+    border-radius: 90px;
+    transition: background-color 0.5s, color 0.5s;
+    transition: 0.5s;
+}
+
+
+
+/************** Hide burger on large screens **************/
+.burger-icon {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #262626;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Mobile Nav hidden by default */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #262626;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.mobile-nav a:hover {
+    background-color: #4CE0D7;
+    color: white;
+    transition: 0.3s;
+}
+
 
 
 /********************** Header Responsive **********************/
 
-/*** Responsive for < 1440px ***/
-@media (max-width: 1440px) {
+/*** Responsive between 1440px and 1240px ***/
+@media (max-width: 1440px) and (min-width: 1241px) {
+
+    #header .container {
+        width: 100%;
+        padding: 37px 40px 47px;
+    }
 
     #header nav {
         display: flex;
         margin-left: auto;
         margin-right: auto;
+        gap: 20px;
     }
 
+    #header .header-content {
+        justify-content: space-between;
+    }
 }
+
 
 /*** Responsive for < 1240px ***/
 @media (max-width: 1240px) {
@@ -121,6 +189,19 @@ body {
     #header nav a {
         padding: 8px 20px;
         font-size: 13px;
+    }
+
+    #header nav.main-nav,
+    #header .search-icon {
+        display: none;
+    }
+
+    .burger-icon {
+        display: flex;
+    }
+
+    .mobile-nav.active {
+        display: flex;
     }
 
 }
@@ -223,8 +304,23 @@ body {
 
 /********************** First section Responsive **********************/
 
-/*** Responsive for < 1440px ***/
-@media (max-width: 1440px) {
+/*** Responsive between 1440px and 1240px ***/
+@media (max-width: 1440px) and (min-width: 1241px) {
+
+    #first-section {
+        width: 100%;
+        margin: 0 auto 73px;
+    }
+
+    #first-section .container {
+        padding: 180px 40px 120px 40px;
+        border-radius: 25px;
+    }
+
+    #first-section .ventus-gradient {
+        width: 100%;
+        font-size: 42px;
+    }
 
 }
 
